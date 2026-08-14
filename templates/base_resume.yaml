@@ -1,0 +1,209 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+
+cv:
+  name: Kamal Nayak
+  headline: Senior Fullstack Lead Engineer
+  location: Vadodara, India
+  email: kamalkumar.nayak.1986@gmail.com
+  phone: "+91 9173101426"
+  social_networks:
+    - network: LinkedIn
+      username: kamalnayakpage
+
+  sections:
+    professional_summary:
+      - Frontend Engineer with 9+ years of experience building scalable web applications.
+      - Strong in React, TypeScript, and performance optimization.
+      - Proven impact on UX, Core Web Vitals, and conversion.
+
+    skills:
+      - label: Frontend
+        details: React, TypeScript, JavaScript, HTML, CSS
+      - label: Tooling & DevOps
+        details: Git, CI/CD, Docker
+      - label: Leadership
+        details: Mentoring, Code Reviews
+    projects:
+      - name: "Scalable Web Analytics Dashboard"
+        technologies: ["React", "TypeScript", "Node.js", "PostgreSQL"]
+        highlights:
+        - "Designed a role-based analytics dashboard using React and Node.js, reducing client-side rendering latency by ~30% under simulated load."
+        - "Implemented pagination and API contract validation to ensure predictable response times and data consistency."
+
+      - name: "Event-Driven Notification Service"
+        technologies: ["Node.js", "Redis", "REST APIs"]
+        highlights:
+        - "Built an event-driven notification service using Node.js and Redis to decouple user actions from delivery workflows."
+        - "Validated message reliability with retry and failure-handling mechanisms under simulated fault conditions."    
+    work_experience:
+      - company: Kairos Tech (Infosys) , Client - British Petroleum (BP)
+        position: Fullstack Lead
+        start_date: 2025-12
+        end_date: present
+        location: Vadodara, India
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+          - Placeholder bullet 4
+          
+      - company: eRoam Technologies
+        position: Fullstack Lead
+        start_date: 2023-03
+        end_date: 2025-09
+        location: Vadodara, India
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+          - Placeholder bullet 4
+
+      - company: Kindred Group
+        position: Software Engineer (Javascript)
+        start_date: 2022-08
+        end_date: 2023-03
+        location: Stockholm, Sweden
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+      - company:  Worldline AB 
+        position: Frontend Engineer
+        start_date: 2022-02
+        end_date: 2022-08
+        location: Stockholm, Sweden
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+
+      - company: Triggy AB
+        position: Frontend Engineer
+        start_date: 2020-04
+        end_date: 2021-12
+        location: Stockholm, Sweden
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+
+      - company: Swedium Global AB
+        position: Frontend Lead
+        start_date: 2019-08
+        end_date: 2020-03
+        location: Stockholm, Sweden
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+
+      - company: Lucy Electric
+        position: Full-stack Lead
+        start_date: 2017-08
+        end_date: 2019-08
+        location: Vadodara, India
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+      - company: Aecor Digital
+        position: Full-stack Lead
+        start_date: 2016-04
+        end_date: 2017-08
+        location: Vadodara, India
+        highlights:
+          - Placeholder bullet 1
+          - Placeholder bullet 2
+          - Placeholder bullet 3
+
+    education:
+      - institution: Gujarat University
+        area: Master in Computer Application & Information Technology
+        location: Ahmedabad, India
+        start_date: 2004-06
+        end_date: 2009-06
+    certifications:
+      - Generative AI Foundation by Upgrad & Microsoft (2025)
+      - Generative AI for Software Development by DeepLearning.AI (2026)
+      - AI-Powered Software System Design by DeepLearning.AI (2026)
+      
+
+    
+design:
+  theme: sb2nov
+  header:
+    space_below_name: 0.50cm
+    space_below_headline: 0.60cm
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    footer: rgb(128, 128, 128)
+    top_note: rgb(128, 128, 128)
+  page:
+    size: a4
+    top_margin: 0.45in
+    bottom_margin: 0.45in
+    left_margin: 0.55in
+    right_margin: 0.55in
+    show_top_note: false
+
+  typography:
+    line_spacing: 0.52em
+    alignment: left
+    font_size:
+      headline: 12pt
+      section_titles: 10pt
+      
+
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.30em
+    space_between_text_based_entries: 0.08em
+
+  entries:
+    allow_page_break: true
+    date_and_location_width: 3.8cm
+    space_between_columns: 0.08cm
+    short_second_row: false
+    highlights:
+      space_left: 0.12cm
+      space_above: 0cm
+      space_between_items: 0cm
+      space_between_bullet_and_text: 0.35em
+
+  templates:
+    education_entry:
+      main_column: |-
+        AREA
+        INSTITUTION LOCATION
+      date_and_location_column: |-
+        DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**
+        **POSITION**
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION 
+        DATE
+            
+
+locale:
+  language: english
+  last_updated: ""
+
+settings:
+  render_command:
+    pdf_path: /Users/kamalnayak/Downloads/kamal_nayak_updated_cv23.pdf
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: false
+
+  bold_keywords: []

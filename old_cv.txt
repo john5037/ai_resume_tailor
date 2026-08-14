@@ -1,0 +1,120 @@
+KAMAL NAYAK Full-Stack Lead Engineer
+kamalkumar.nayak.1986@gmail.com +91 9173101426 Vadodara, India
+linkedin.com/in/kamalnayakpage
+SUMMARY
+Lead Full-Stack Engineer with 15+ years building and scaling high-traffic, customer-facing web and backend
+systems, including 5+ years delivering production platforms in Stockholm, Sweden. Deep expertise in system
+and API design across React, Vue, TypeScript, Node.js, and Python (FastAPI), modern frontend architecture, and
+production AI/LLM systems. I own products end to end frontend and backend services, databases, CI/CD, and
+cloud infrastructure and recently shipped an enterprise conversational AI (natural-language-to-SQL) platform on
+AWS Bedrock and OpenShift for a global energy client. Consistent record of measurable outcomes: application
+performance up to 70%, conversion up to 49%, and release velocity up by 60%, delivered through
+microfrontends, performance engineering, RAG/LLM pipelines, and DevOps automation. Open to relocation
+and remote work.
+SKILLS
+Languages: TypeScript, JavaScript (ES6+), Python, PHP, Rust, SQL
+Frameworks & Libraries: React, Vue.js, Next.js, Node.js (Express, NestJS), FastAPI, Django, Spring Boot, Redux
+Toolkit
+AI / LLM Engineering: LangChain, RAG, AWS Bedrock, Vector Search (OpenSearch), Prompt Engineering, AI
+Agents (A2A), Guardrails & Content Safety
+Database & APIs: PostgreSQL, MongoDB, Redis, Elasticsearch, REST, GraphQL (Apollo), WebSockets, API &
+Schema Design
+Cloud, DevOps & Infrastructure: AWS, GCP, Docker, Kubernetes, OpenShift, CI/CD (Azure DevOps, GitHub
+Actions), Observability (Grafana, Sentry)
+Leadership & Collaboration: Team Mentoring, Code Reviews, Agile/Scrum, Microfrontends, Web
+Performance (Core Web Vitals), Testing (Jest, Playwright), Stakeholder Communication
+WORK EXPERIENCE
+Fullstack Lead
+Kairos Tech, Infosys (Client: British Petroleum)
+12/2025 – Present | Remote, India
+•Architected and delivered a scalable multi-module frontend platform for enterprise asset workflows using
+React 18, TypeScript, Redux Toolkit, and Apollo GraphQL, improving feature delivery speed by 40% through
+a modular, domain-driven architecture.
+•Delivered an enterprise conversational AI platform (natural-language-to-SQL) used across four global business
+teams via Microsoft Teams, building a multi-stage LangChain/RAG pipeline over AWS Bedrock LLMs and
+PostgreSQL behind a FastAPI backend, cutting data-request turnaround from days to seconds.
+•Hardened the platform against unsafe database operations by engineering a dual-pass SQL safety guard (AST
+validation with sqlglot plus a live EXPLAIN pre-check) and AWS Bedrock Guardrails enforcing fail-closed
+content and PII safety at the input and output boundaries.
+•Built a dynamic stage-gate form engine that renders complex, condition-based workflows from data-driven
+configuration with Redux and GraphQL, reducing hardcoded UI logic by 60% and enabling rapid form
+changes without code releases.
+•Designed a resilient API integration layer with Apollo Client auth middleware, error handling, and endpoint
+splitting cutting API failures by 30% and enabling seamless communication across multiple backends (ESG
+and external services).
+•Automated delivery with an Azure DevOps CI/CD pipeline that lints, security-scans, provisions AWS
+infrastructure via CloudFormation (IaC), and deploys containers to OpenShift (ROSA), with PII-redacted
+observability through Grafana and request-level tracing.
+•Established an end-to-end testing strategy with Playwright and Jest across critical business flows, raising
+regression coverage to 85% and reducing production defects by 40%.
+Fullstack Lead
+eRoam Technologies
+03/2023 – 09//2025 | Vadodara, India
+•Led end-to-end development of a microfrontend-based travel platform, designing modular React and Vue
+applications with shared state management and CI/CD pipelines, which enabled 5 parallel delivery streams
+and cut release cycles by 60%.
+•Optimized high-concurrency flight search by offloading heavy computation to Web Workers and streamlining
+backend API orchestration, improving UI responsiveness by 80% under 30,000+ concurrent searches.
+•Designed relational and NoSQL schemas for high-concurrency search and booking, applying indexing
+strategies and Redis caching to hold sub-100ms read performance at peak load.
+•Increased hotel booking conversion by 49% through incremental rendering, SSR optimizations, and Core Web
+Vitals improvements, reducing initial load time from 4.2 seconds to 1.8 seconds.
+•Cut repetitive engineering effort by 35% by integrating LLM-based refactoring and automated test generation
+into the team’s development workflow
+Javascript Consultant
+FDJ United
+08/2022 – 03/2023 | Stockholm, Sweden
+•Delivered real-time sportsbook widgets for global markets by building React components integrated with
+WebSocket-driven backend services, improving live-betting performance by 35% across the EU, US, and AU
+regions.
+•Reduced CMS integration overhead by 40% by designing reusable frontend modules and well-defined
+backend API contracts.
+•Supported large-scale live sports operations by configuring real-time event triggers for more than one million
+live events, serving over 500,000 monthly active users.
+•Contributed to a high-volume payment platform, building frontend interfaces tightly integrated with backend
+transaction systems that reliably processed over 10 million transactions.
+Frontend Developer
+Worldline AB
+02/2022 – 08/2022 | Stockholm, Sweden
+•Improved production stability and regulatory compliance by implementing GDPR-compliant, accessibilityfirst UI patterns with Jest and Cypress, reaching 85% test coverage and reducing production bugs by 60%.
+•Strengthened application security and onboarding by integrating Keycloak authentication and OWASP best
+practices, cutting login failures by 60% and improving onboarding speed by 40%.
+Frontend Developer
+Triggy AB
+04/2020 – 12/2021 | Stockholm, Sweden
+•Reduced live data latency by optimizing event-driven WebSocket pipelines and frontend state
+synchronization, cutting update delays by 49% and lifting mobile conversion rates by 71%.
+•Architected low-latency backend event ingestion and storage pipelines for real-time betting systems through
+optimized data models and persistence flows.
+Frontend Lead
+Swedium Global AB
+08/2019 – 03/2020 | Stockholm, Sweden
+•Led a 4-engineer frontend team delivering a customer-facing analytics console with React and TypeScript,
+establishing component-library, code-review, and Storybook standards adopted across the organisation.
+Fullstack Lead
+Lucy Electric
+08/2017 – 08/2019 | Vadodara, India
+•Built an IoT-based smart grid monitoring platform with full-stack JavaScript applications, backend APIs, and
+data visualization layers, supporting more than 500 utility substations.
+•Designed scalable backend ingestion and aggregation pipelines with persistent time-series storage and
+optimized querying, processing over one million sensor records per day and improving reporting
+performance by 60%.
+Fullstack Lead
+Aecor Digital
+04/2016 – 08/2017 | Vadodara, India
+•Delivered a scalable tournament management platform with modular user interfaces and backend services,
+supporting more than 200 events and 5,000 participants annually.
+•Improved field inspection efficiency by building a mobile-first inspection application integrated with backend
+reporting systems, reducing reporting time by 50% and strengthening regulatory compliance.
+EDUCATION
+Master of Computer Application & Information
+Technology
+Gujarat University
+06/2004 – 06/2009 | Ahmedabad, Gujarat
+CERTIFICATIONS
+Generative AI For Software Development
+Deeplearning.ai
+Generative AI Foundations
+Upwork & Microsoft
+AI-Powered Software and System Design
+Deepleaning.ai

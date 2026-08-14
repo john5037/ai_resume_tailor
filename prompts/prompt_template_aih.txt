@@ -1,0 +1,45 @@
+====================================================
+OUTPUT REQUIREMENT (CRITICAL)
+====================================================
+
+Return ONLY valid JSON.
+Do NOT include explanations, markdown, comments, or surrounding text.
+Any non-JSON output is a failure.
+
+----------------------------------------------------
+JSON SCHEMA (STRICT)
+----------------------------------------------------
+
+{
+  "title": "ATS-optimized role title derived from JD ",
+
+   "professional_summary": [
+    "Sentence 1: experience + role alignment (max 25 words), primary frontend tech stack from JD (max 20 words), performance, accessibility, CMS, delivery focus (max 15 words) Open to relocation and remote opportunities"
+  ],
+  "skills": {
+    "ATS-friendly category name": "comma-separated skills",
+    "Another inferred category": "comma-separated skills"
+  },
+  "projects": [
+    {
+      "name": "Project name aligned to JD",
+      "summary": "Tech stack: comma-separated technologies (ONLY from JD or OLD_CV)",
+      "highlights": [
+        "JD-aligned problem solved using specified tech with realistic outcome",
+        "Architecture, scalability, or reliability consideration relevant to JD"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Role title from OLD_CV (unchanged)",
+      "company": "Company name from OLD_CV (unchanged)",
+      "highlights": [
+        "X–Y–Z bullet: action + technology + measurable outcome",
+        "X–Y–Z bullet: action + technology + measurable outcome",
+        "X–Y–Z bullet: action + technology + measurable outcome",
+        "X–Y–Z bullet: action + technology + measurable outcome"
+      ]
+    }
+  ]
+}

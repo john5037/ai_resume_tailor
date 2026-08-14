@@ -23,3 +23,6 @@ The single default prompt is `prompts/prompt_template_aih.txt`.
 The single RenderCV base template is `templates/base_resume.yaml`.
 
 For deployment, push the repository to GitHub and deploy `app.py` on Streamlit Community Cloud.
+
+## Demo
+https://kmlnyk-ai-resumetailor.streamlit.app/

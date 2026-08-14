@@ -180,7 +180,7 @@ if st.button("Reset YAML to Default"):
 # ============================================================
 
 if st.button(
-    "🚀 Generate Resume",
+    "🚀 AI Generate Resume",
     type="primary",
     use_container_width=True,
 ):
@@ -338,7 +338,100 @@ if st.button(
 
         st.stop()
 
+# ============================================================
+# READY-MADE RESUME
+# ============================================================
 
+st.divider()
+
+st.subheader("📄 Ready-Made Resume")
+
+st.caption(
+    "Load the existing resume_tailored.yaml without using OpenAI. "
+    "You can edit it below and generate the PDF."
+)
+
+if st.button(
+    "📄 Load Ready-Made Resume",
+    type="secondary",
+    use_container_width=True,
+):
+
+    ready_yaml_path = OUTPUT / "resume_tailored.yaml"
+
+    if not ready_yaml_path.exists():
+
+        st.error(
+            "resume_tailored.yaml was not found in the outputs folder."
+        )
+
+    else:
+
+        try:
+
+            ready_yaml_content = ready_yaml_path.read_text(
+                encoding="utf-8"
+            )
+
+            # Validate YAML
+            ready_data = yaml.safe_load(
+                ready_yaml_content
+            )
+
+            if not isinstance(
+                ready_data,
+                dict,
+            ):
+
+                raise ValueError(
+                    "resume_tailored.yaml must contain a valid YAML object."
+                )
+
+            if "cv" not in ready_data:
+
+                raise ValueError(
+                    "resume_tailored.yaml must contain a top-level 'cv' section."
+                )
+
+            # Put ready-made YAML into the same editor
+            st.session_state[
+                "tailored_yaml"
+            ] = ready_yaml_content
+
+            # Keep a restore copy
+            st.session_state[
+                "original_tailored_yaml"
+            ] = ready_yaml_content
+
+            # Default filename title
+            st.session_state[
+                "resume_title"
+            ] = ready_data.get(
+                "cv",
+                {}
+            ).get(
+                "headline",
+                "Resume"
+            )
+
+            st.success(
+                "Ready-made resume loaded successfully. "
+                "You can edit the YAML below."
+            )
+
+            st.rerun()
+
+        except yaml.YAMLError as exc:
+
+            st.error(
+                f"Invalid resume_tailored.yaml: {exc}"
+            )
+
+        except Exception as exc:
+
+            st.error(
+                f"Could not load resume_tailored.yaml: {exc}"
+            )
 # ============================================================
 # AI RESPONSE JSON
 # ============================================================

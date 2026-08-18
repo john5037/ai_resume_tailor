@@ -11,10 +11,7 @@ cv:
       username: kamalnayakpage
 
   sections:
-    professional_summary:
-      - Frontend Engineer with 9+ years of experience building scalable web applications.
-      - Strong in React, TypeScript, and performance optimization.
-      - Proven impact on UX, Core Web Vitals, and conversion.
+    professional_summary: "Frontend Engineer with 15+ years of experience building scalable web applications."
 
     skills:
       - label: Frontend

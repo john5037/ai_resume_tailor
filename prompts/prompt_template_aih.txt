@@ -13,7 +13,9 @@ JSON SCHEMA (STRICT)
 {
   "title": "ATS-optimized role title derived from JD ",
 
-  "professional_summary": "",
+  "professional_summary": [
+      ""
+  ],
   "skills": {},
   "projects": [
     {
@@ -21,7 +23,7 @@ JSON SCHEMA (STRICT)
       "summary": "Tech stack: comma-separated technologies (ONLY from JD or OLD_CV)",
       "highlights": [
         "JD-aligned problem solved using only technologies, responsibilities, and outcomes explicitly supported by OLD_CV",
-        "Architecture, scalability, or reliability consideration relevant to JD, only when explicitly supported by OLD_CV"
+        "Architecture, scalability, or reliability consideration relevant to JD"
       ]
     }
   ],

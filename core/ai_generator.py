@@ -76,14 +76,23 @@ Good metric examples:
 - Tone should feel confident and natural (structured, collaborative, humble).
 
 2. Professional Summary (Max 50 words)
-- role: 5–6 bullet points with results and keywords
+- Write ONE concise paragraph with results and keyword, not bullet points.
 - At least 50% of bullets must include numbers
 - For earlier roles: 3–4 concise points
 - Each bullet must highlight value, not just duties
-Every bullet must follow:
+Every sentence must follow:
 Action → SkX years of experience in [industry/domain]
 - Skilled in [Skill 1], [Skill 2], [Skill 3] (from JD)
 - Delivered [quantifiable result] at [last company]
+- End with: “Open to relocation.”
+
+2. Professional Summary (Max 50 words)
+- Write ONE concise paragraph with results and keywords, not bullet points.
+- At least 50% of sentences must include numbers.
+- Include relevant years of experience in [industry/domain].
+- Include [Skill 1], [Skill 2], [Skill 3] from the JD, only when supported by the OLD_CV.
+- Include a quantifiable result from the last company when supported by the OLD_CV.
+- Each sentence should communicate action, relevant experience/skills, or a verified result.
 - End with: “Open to relocation.”
 
 3. Work Experience (Max 350 words)
@@ -130,6 +139,7 @@ def generate_resume_json(api_key, model, old_cv, jd, country, template):
         ],
     )
     content = response.choices[0].message.content
+    print("OpenAI response:", content)
     if not content:
         raise RuntimeError("OpenAI returned an empty response.")
     try:

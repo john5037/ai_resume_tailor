@@ -179,8 +179,9 @@ design:
     education_entry:
       main_column: |-
         AREA
-        INSTITUTION LOCATION
+        INSTITUTION 
       date_and_location_column: |-
+        LOCATION
         DATE
     experience_entry:
       main_column: |-

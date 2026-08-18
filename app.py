@@ -255,7 +255,7 @@ if st.button(
                 country,
                 st.session_state["prompt"],
             )
-
+            st.session_state["ai_response"] = data
         except Exception as exc:
 
             st.error(str(exc))
@@ -298,6 +298,8 @@ if st.button(
         st.session_state[
             "tailored_yaml"
         ] = yaml_content
+        st.session_state["tailored_yaml_editor"] = yaml_content
+        st.session_state["original_tailored_yaml"] = yaml_content
 
         # Save AI JSON
         json_path = (
@@ -314,10 +316,7 @@ if st.button(
         )
 
         # Save original AI-generated YAML
-        st.session_state[
-            "original_tailored_yaml"
-        ] = yaml_content
-
+        
         # Save title for dynamic filename
         st.session_state[
             "resume_title"

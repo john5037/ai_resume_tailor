@@ -6,33 +6,28 @@ def build_prompt(old_cv, jd, country, template):
 Step 1: Please read and remember my OLD CV (pasted below). DO NOT rewrite yet. Just understand my experience, roles, and achievements.
 {template}
 
-<OLD_CV>
+<PASTE OLD CV HERE>
 {old_cv}
-</OLD_CV>
+</PASTE OLD CV HERE>
 
----
+🔹 Step 2: Here is the Job Description (JD) for the role I am applying for. 
+Use this to guide everything:
 
-=====================================================
-STEP 2: ANALYZE THE JOB DESCRIPTION
-=====================================================
-
-🔹 Step 2: Here is the Job Description (JD) for the role I am applying for. Use this to guide everything:
-
-<JOB_DESCRIPTION>
+<PASTE JOB DESCRIPTION HERE>
 {jd}
-</JOB_DESCRIPTION>
+<PASTE JOB DESCRIPTION HERE>
 
 ---
  Step 3: Now write a clean, ATS-optimized resume for this country:
  Target Country: 
- <COUNTRY>
+<COUNTRY>
 {country}
 </COUNTRY>
 
-If the target country is not explicitly listed, follow that country’s common resume style. 
+If the target country is not explicitly listed, follow that country's common resume style. 
 When unsure, default to a clean EU-style resume.
 
-Write the resume like you’re helping me get shortlisted for this exact job — not just pass ATS.
+Write the resume like you’re helping me get shortlisted for this exact job not just pass ATS.
 
 Make sure keywords, tone, and style match hiring patterns in that region.
 # Instructions:
@@ -40,13 +35,13 @@ Make sure keywords, tone, and style match hiring patterns in that region.
   - Use simple, confident language — no robotic phrases or fluff.
   - Every bullet point should show value, outcome, or measurable result.
 Use metrics like:
-   % improvement 
-   Time saved
-   Revenue or cost impact
-   Scale handled
-   Users supported
-   Systems managed
-   Performance gains
+   - % improvement 
+   - Time saved
+   - Revenue or cost impact
+   - Scale handled
+   - Users supported
+   - Systems managed
+   - Performance gains
 
 - At least 40–50% of bullet points MUST contain numbers or measurable results.
 - Format should be clean and ATS-friendly (no tables or graphics).
@@ -56,48 +51,56 @@ Improve weak or responsibility-only bullets from my old CV by converting them in
 
 If exact numbers are missing, use:
 
-   1)"approximately"
-   2)"around"
-   3)"over"
-   4)"more than"
-   
-   But never invent unrealistic numbers.
+   - "approximately"
+   - "around"
+   - "over"
+   - "more than"
+      But never invent unrealistic numbers.
 
 Good metric examples:
 
- 1) Reduced incidents by 30%
- 2) Improved deployment time by 40%
- 3) Supported 200+ users
- 4) Managed 50+ servers
- 5) Reduced cloud cost by 20%
- 6)Increased test coverage from 60% to 85%
+ - Reduced incidents by 30%
+ - Improved deployment time by 40%
+ - Supported 200+ users
+ - Managed 50+ servers
+ - Reduced cloud cost by 20%
+ - Increased test coverage from 60% to 85%
  
 - Use keywords MOST relevant to the target country + the JD.
 - Tone should feel confident and natural (structured, collaborative, humble).
 
-2. Professional Summary (Max 50 words)
-- Write ONE concise paragraph with results and keyword, not bullet points.
-- At least 50% of bullets must include numbers
-- For earlier roles: 3–4 concise points
-- Each bullet must highlight value, not just duties
-Every sentence must follow:
-Action → SkX years of experience in [industry/domain]
-- Skilled in [Skill 1], [Skill 2], [Skill 3] (from JD)
-- Delivered [quantifiable result] at [last company]
-- End with: “Open to relocation.”
+Resume Format (500–600 words max):
+1. Contact Information
+Full name, phone number, email, LinkedIn profile, current location (City, Country)
 
 2. Professional Summary (Max 50 words)
-- Write ONE concise paragraph with results and keywords, not bullet points.
-- At least 50% of sentences must include numbers.
-- Include relevant years of experience in [industry/domain].
-- Include [Skill 1], [Skill 2], [Skill 3] from the JD, only when supported by the OLD_CV.
-- Include a quantifiable result from the last company when supported by the OLD_CV.
-- Each sentence should communicate action, relevant experience/skills, or a verified result.
-- End with: “Open to relocation.”
+Mention total years of experience + relevant years aligned to the JD.
+Highlight 3 key skills/technologies from the JD that are supported by the CV.
+Include one strong achievement/result from the CV, preferably from the most relevant/latest company.
+Tailor wording to the target role, domain, and country.
+Do not invent skills, experience, achievements, or metrics.
+End with: "Open to relocation."
+Follow the concise style and structure of the provided examples. 
+    Examples
+    Example 1:
+    20 years of IT experience with 6 years of relevant expertise in Advanced/network engineering and security. Skilled in VMware NSX-T, Palo Alto firewalls, and WAN technologies. Delivered critical network optimizations and security enhancements at [Last Company].
+    Open to relocation.
+    Example 2:
+    Over 20 years of professional experience with 6 years focused on relevant roles in network architecture and firewall management. Proficient in VMware NSX-T, F5 load balancing, and WAN connectivity. Achieved 30% network downtime reduction at [Last Company].
+    Open to relocation.
+    Example 3:
+    Cloud professional with 15 years of total experience, including 6 years of relevant work in complex network environments. Expertise in Palo Alto firewalls, NSX-T, and WAN design. Successfully led multiple network upgrade projects at [Last Company].
+    Open to relocation.
 
 3. Work Experience (Max 350 words)
 - List jobs in reverse order (latest first)
-- For latest ill → Result
+- For latest role: 5–6 bullet points with results and keywords
+- At least 50% of bullets must include numbers
+- For earlier roles: 3–4 concise points
+- Each bullet must highlight value, not just duties
+
+Every bullet must follow:
+Action → Skill → Result
 
 **4. Skills (Max 50 words)**
 

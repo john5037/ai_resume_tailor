@@ -104,16 +104,15 @@ Action → Skill → Result
 
 **4. Skills (Max 50 words)**
 
+- Technical + soft skills from the JD
 * Organize skills into **EXACTLY these 6 categories** (do not rename, remove, or add any):
   **Languages | Frameworks & Libraries | AI / LLM Engineering | Databases & APIs | Cloud, DevOps & Infrastructure | Leadership & Practices**
 * Order categories by relevance to the JD/role; within each category, list the JD's **must-have skills first**.
-* Include **technical and soft skills explicitly required by the JD**, but only when supported by my CV.
+* Include **technical and soft skills explicitly required by the JD**.
 * Place each skill in its single correct category (React = Framework, SQL = Language, PostgreSQL = Database).
-* Pull skills from the JD, but **only include skills I actually have from my CV**. Never invent tools, skills, or proficiency levels.
 * Mirror the JD's **exact terminology and spelling** (e.g., "TypeScript", "CI/CD", "Kubernetes").
 * Use **comma-separated, ATS-safe formatting**. No tables, graphics, or keyword stuffing.
-* Avoid generic terms such as "team player" or "hard worker" unless explicitly stated in the JD.
-* **Strictly enforce the 50-word maximum**, including category names and skills.
+* Avoid generic terms.
 
 5. Make sure the language feels human — natural, confident, and written as if by an experienced professional, not by AI. Keep a few words that show collaboration, ownership, and problem-solving.”
 

@@ -11,8 +11,7 @@ JSON SCHEMA (STRICT)
 ----------------------------------------------------
 
 {
-  "title": "ATS-optimized role title derived from JD ",
-
+  "title": "",
   "professional_summary": [
       ""
   ],

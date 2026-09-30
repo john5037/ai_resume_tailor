@@ -93,11 +93,32 @@ with st.sidebar:
         type="password",
     )
 
-    model = st.selectbox(
+    model_options = [
+        "gpt-4.1",
+        "gpt-5",
+        "gpt-5.6-sol",
+        "gpt-5.6-luna",
+        "gpt-5.6-terra",
+        "gpt-4.1-mini",
+        "gpt-4o",
+        "gpt-4o-mini",
+        "Custom model...",
+    ]
+    selected_model = st.selectbox(
         "Model",
-        ["gpt-4.1"],
+        model_options,
         index=0,
+        help="Choose a supported OpenAI model or enter a model ID manually.",
     )
+
+    model = (
+        st.text_input("Custom model ID", placeholder="e.g. gpt-4.1")
+        if selected_model == "Custom model..."
+        else selected_model
+    )
+
+    if not model.strip():
+        st.warning("Enter a model ID before generating the resume.")
 
     country = st.text_input(
         "Target country",
@@ -192,6 +213,12 @@ if st.button(
     if not api_key.strip():
 
         st.error("Enter an OpenAI API key.")
+
+        st.stop()
+
+    if not model.strip():
+
+        st.error("Select a model or enter a custom model ID.")
 
         st.stop()
 

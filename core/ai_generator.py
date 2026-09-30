@@ -130,16 +130,23 @@ def generate_resume_json(api_key, model, old_cv, jd, country, template):
     prompt = build_prompt(old_cv, jd, country, template)
     
     client = OpenAI(api_key=api_key)
-    response = client.chat.completions.create(
-        model=model, temperature=0, top_p=1,
-        messages=[
+    request = {
+        "model": model.strip(),
+        "messages": [
             {"role": "system", "content":
              "You are an expert ATS resume writer and recruiter. Analyze the OLD_CV and JOB_DESCRIPTION. "
              "Optimize for ATS relevance, recruiter readability, and interview defensibility. "
              "Return ONLY valid JSON that matches the schema."},
             {"role": "user", "content": prompt},
         ],
-    )
+    }
+
+    # Reasoning models generally do not accept sampling controls.
+    if not request["model"].startswith(("o1", "o3", "o4", "gpt-5")):
+        request["temperature"] = 0
+        request["top_p"] = 1
+
+    response = client.chat.completions.create(**request)
     content = response.choices[0].message.content
     print("OpenAI response:", content)
     if not content:
